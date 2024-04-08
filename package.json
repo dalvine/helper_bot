@@ -1,19 +1,32 @@
 {
-  "name": "helper_bot",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/dalvine/helper_bot.git"
-  },
-  "author": "Kozyrev Vladislav",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/dalvine/helper_bot/issues"
-  },
-  "homepage": "https://github.com/dalvine/helper_bot#readme"
+    "name": "helper_bot",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "start": "nodemon index.js",
+        "lint": "eslint .",
+        "prettier": "prettier --write ."
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/dalvine/helper_bot.git"
+    },
+    "author": "Kozyrev Vladislav",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/dalvine/helper_bot/issues"
+    },
+    "homepage": "https://github.com/dalvine/helper_bot#readme",
+    "dependencies": {
+        "dotenv": "^16.4.5",
+        "node-telegram-bot-api": "^0.65.1"
+    },
+    "devDependencies": {
+        "eslint": "^8.56.0",
+        "eslint-config-prettier": "^9.0.0",
+        "nodemon": "^3.0.3",
+        "prettier": "3.2.5"
+    }
 }
